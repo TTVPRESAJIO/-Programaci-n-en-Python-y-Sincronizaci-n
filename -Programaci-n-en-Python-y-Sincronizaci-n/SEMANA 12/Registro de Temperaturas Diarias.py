@@ -1,18 +1,18 @@
 # Importar libreria para generar temperaturas ramdon para el ejercicio:
 import random
-# definimos los parametros para la matriz
+
 num_ciudades = 3
 num_dias = 7
 num_semanas = 4
-# creamos la matriz con las temperaturas aleatorias
+
 matriz_temperaturas= [
-    [ # lista de semana
+    [ 
          [random.randint(10,35) for _ in range (num_dias)]
         for _ in range ( num_semanas)
         ]
     for _ in range ( num_ciudades)
 ]
-#creamos una lista para almacenar los promedios de cada ciudad
+
 promedios = []
 for i in range(num_ciudades):
     promedios_ciudades = []
